@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 210" role="img" aria-label="Erin Mills Optical stacked logo">
+  <g fill="none" stroke="#275E63" stroke-width="2.5">
+    <circle cx="130" cy="52" r="32"/>
+    <circle cx="170" cy="52" r="32"/>
+  </g>
+  <circle cx="150" cy="52" r="3.5" fill="#C98A3D"/>
+  <g font-family="Avenir Next, Futura, Century Gothic, sans-serif" text-anchor="middle">
+    <text x="153" y="138" font-size="27" font-weight="400" letter-spacing="6.5" fill="#1F2933">ERIN MILLS</text>
+    <line x1="55" y1="152" x2="245" y2="152" stroke="#C98A3D" stroke-width="1"/>
+    <text x="156" y="176" font-size="13" font-weight="500" letter-spacing="12" fill="#275E63">OPTICAL</text>
+  </g>
+</svg>

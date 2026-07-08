@@ -134,7 +134,11 @@ img,svg{max-width:100%}
   content:""; width:6px; height:6px; border-radius:50%;
   background:var(--amber); flex:none;
 }
-.hero-visual svg{display:block; width:100%}
+.hero-visual img{
+  display:block; width:100%; height:auto;
+  border-radius:var(--radius); border:1px solid var(--line);
+  box-shadow:0 12px 32px rgba(31,41,51,.10);
+}
 
 /* ============ 03 Services ============ */
 .card-grid{
@@ -160,13 +164,15 @@ img,svg{max-width:100%}
 }
 .frame-tile{
   background:var(--paper); border:1px solid var(--line); border-radius:var(--radius);
-  padding:var(--sp-4); text-align:center; color:var(--petrol);
+  overflow:hidden; text-align:center;
 }
-.frame-tile svg{width:80%; margin-inline:auto}
+.frame-tile img{
+  display:block; width:100%; height:auto; aspect-ratio:4/3; object-fit:cover;
+}
 .frame-tile p{
   font-family:var(--sans); font-size:.88rem; font-weight:500;
   letter-spacing:.06em; text-transform:uppercase; color:var(--ink);
-  margin:var(--sp-3) 0 0;
+  margin:0; padding:var(--sp-3);
 }
 .frames-note{margin-top:var(--sp-4); font-style:italic; color:var(--muted); font-size:.95rem}
 
@@ -176,8 +182,15 @@ img,svg{max-width:100%}
   background:var(--petrol-deep); border-radius:var(--radius);
   padding:var(--sp-6) var(--sp-5); color:var(--paper);
 }
-.why-mark{width:76px; display:block; margin-bottom:var(--sp-4)}
+.why-photo{
+  display:block; width:100%; height:auto; border-radius:var(--radius);
+  margin-bottom:var(--sp-4);
+}
 .why-quote{font-size:1.25rem; font-style:italic; line-height:1.5; margin:0}
+.why-attrib{
+  font-family:var(--sans); font-size:.85rem; color:var(--petrol-tint);
+  margin:var(--sp-3) 0 0;
+}
 .why-list{list-style:none; margin:var(--sp-4) 0 0; padding:0; display:flex; flex-direction:column; gap:var(--sp-3)}
 .why-list li{padding-left:var(--sp-4); position:relative; color:var(--muted)}
 .why-list li::before{
@@ -287,7 +300,6 @@ address{font-style:normal; margin-bottom:var(--sp-3); line-height:1.7}
 /* ============ Responsive ============ */
 @media (max-width:960px){
   .hero-grid,.why-grid,.booking-grid,.visit-grid{grid-template-columns:1fr}
-  .hero-visual{display:none}
   .footer-grid{grid-template-columns:1fr 1fr}
   .section{padding-block:var(--sp-6)}
 }

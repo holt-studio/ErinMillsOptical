@@ -23,8 +23,10 @@ The form currently shows a "call us" fallback because no Web3Forms key is set.
 
 ## Content still owed by the owner
 
-- Storefront / interior / frame photos (replace the frame-style tiles in the
-  `#frames` section).
+- **Real photography.** All photos in `assets/` (hero, frame styles, owner
+  portrait) are AI-generated placeholders made with Google Flow — swap in real
+  storefront, staff and frame photos before treating the site as final. The
+  owner portrait is explicitly an example person, not the real owner.
 - Frame brand list.
 - Full list of insurers for direct billing (Sun Life is confirmed).
 - Facebook page URL for the footer, if wanted.

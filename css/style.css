@@ -142,7 +142,6 @@ img,svg{max-width:100%}
 }
 .hero-media img{
   display:block; width:100%; height:auto;
-  aspect-ratio:3/4; object-fit:cover; object-position:70% center;
   border-radius:var(--radius); border:1px solid var(--line);
   box-shadow:0 12px 32px rgba(31,41,51,.10);
 }
@@ -307,7 +306,6 @@ address{font-style:normal; margin-bottom:var(--sp-3); line-height:1.7}
 /* ============ Responsive ============ */
 @media (max-width:960px){
   .hero-grid,.why-grid,.booking-grid,.visit-grid{grid-template-columns:1fr}
-  .hero-media img{aspect-ratio:4/3; object-position:64% 25%}
   .footer-grid{grid-template-columns:1fr 1fr}
   .section{padding-block:var(--sp-6)}
 }
